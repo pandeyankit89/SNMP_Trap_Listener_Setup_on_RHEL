@@ -1,0 +1,1 @@
+# SNMP_Trap_Listener_Setup_on_RHEL
