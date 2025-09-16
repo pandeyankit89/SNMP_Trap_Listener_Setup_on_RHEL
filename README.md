@@ -1,8 +1,13 @@
 # SNMP (v2c/v3) Trap Listener Setup on RHEL
 
 - _This guide provides detailed instructions for setting up an SNMP v2 and v3 trap listener on RHEL, printing received traps to the console, and archiving them to a log file. It also includes steps for setting up the listener as a systemd service._
----
 
+  - [(1) SNMP v2 Trap Listener Setup and Print Received Traps on Console](#1)
+  - [(2) SNMP v2 Trap Listener Setup with Log File](#2)
+  - [(3) SNMP v2 Trap Listener Setup with `systemctl`](#3)
+  - [(4) SNMP v3 Trap Listener Setup with Log File](#4)
+---
+<a id="1"></a>
 ## (1) *SNMP v2 Trap Listener Setup and Print Received Traps on Console* :
 
 ### Step 1: Log in to RHEL
@@ -114,6 +119,7 @@ NET-SNMP version 5.9.4.pre2
  --------------
 ```
 ---
+<a id="2"></a>
 ## (2) *SNMP v2 Trap Listener Setup with Log File :*
 
 ### Step 1: Create a Log File
@@ -160,6 +166,7 @@ SNMPv2-MIB::sysDescr.0 = STRING: Test trap from snmptrap
  --------------
 ```
 ---
+<a id="3"></a>
 ## (3) *SNMP v2 Trap Listener Setup with `systemctl` :*
 
 ### Step 1: Configure `snmptrapd`
@@ -225,6 +232,7 @@ SNMPv2-MIB::sysDescr.0 = STRING: Test trap from snmptrap
  --------------
 ```
 ---
+<a id="4"></a>
 ## (4) *SNMP v3 Trap Listener Setup with Log File :*
 
 ### Step 1: Create SNMP v3 Configuration File
